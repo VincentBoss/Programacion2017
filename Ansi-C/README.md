@@ -1,2 +1,2 @@
 # Ansi-C
-En esta carpeta se almacenan ejercicios, resueltos de distintos tipos en lenguaje Ansi-C
+En esta carpeta contiene ejercicios resueltos de distintos tipos escritos en lenguaje Ansi-C
