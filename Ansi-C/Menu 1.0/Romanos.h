@@ -55,7 +55,7 @@ void Romanos(char * Entrada){
                                 if(Numero == 5){ /* Aquí se escriben los digitos de la forma 5x10^n  */
                                       Msg[Indice2] = Romanos[fix]; Indice2 +=1;
                                 }else if(Numero == 9){ /* Aquí se escriben los digitos de la forma 9x10^n  */
-                                      Msg[Indice2] = Romanos[prefix]; Indice2 +=1
+                                      Msg[Indice2] = Romanos[prefix]; Indice2 +=1;
                                       Msg[Indice2] = Romanos[sufix];  Indice2 +=1;
                                 }else{ /*Numeros entre los tipos 5x10^n y 9x10^n, correspondientes a la iteracion*/
                                       Msg[Indice2] = Romanos[fix]; Indice2 +=1;
