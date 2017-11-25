@@ -1,5 +1,9 @@
 // vincent © 2017
-void Romanos(char*); /* Prototipos */
+#ifndef ROMANOS_H
+#define ROMANOS_H
+
+void Romanos(char*); //Prototipo
+
 void Romanos(char * Entrada){
     /**************************************************************************
      * Creamos las variables como puntero y reservamos memoria                *
@@ -23,7 +27,7 @@ void Romanos(char * Entrada){
      int  Contador , ContadorDos , Numero , Indice , Indice2 , Longitud , prefix , fix , sufix;
           Contador = ContadorDos = Numero = Indice = Indice2 = Longitud = prefix = fix = sufix = 0;
 
-    printf("Escribe el numero: "); scanf("%s", Entrada); Numero = atoi(Entrada);
+    Numero = atoi(Entrada);
     Longitud = strlen(Entrada);
 
     if((Numero <= 3000) && (Numero != 0) ){
@@ -69,7 +73,9 @@ void Romanos(char * Entrada){
                 ContadorDos = 0;
           }//Fin while
         Msg[Indice2] = '\0';
-    printf("Numero: %d en Romano es: %s\n", Numero, Msg);
+    printf("En Romano es: %s\n", Msg);
     }else{ printf("El numero debe ser mayor que uno y menos que tres mill\n"); }/* Fin IF */
 
 }//Fin Romanos
+
+#endif //Fin ROMANOS_H
