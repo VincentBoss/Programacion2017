@@ -3,7 +3,6 @@
 #define NIF_H
 
 void NIF(int); //Prototipo
-
 void NIF(int DNI){
 char Letras[] = {'T','R','W','A','G','M',
                  'Y','F','P','D','X','B',
