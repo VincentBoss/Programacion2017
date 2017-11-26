@@ -73,7 +73,7 @@ void Romanos(char * Entrada){
                 ContadorDos = 0;
           }//Fin while
         Msg[Indice2] = '\0';
-    printf("En Romano es: %s\n", Msg);
+    printf("En Romano es: %s", Msg);
     }else{ printf("El numero debe ser mayor que uno y menos que tres mill\n"); }/* Fin IF */
 
 }//Fin Romanos
