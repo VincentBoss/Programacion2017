@@ -43,7 +43,7 @@ void Romanos(char * Entrada){
                       if(Numero < 5){
                           fix = Indice;
                           if( Indice > 0)prefix = Indice - 1;
-                                if(Numero != 4){ /* Aquí se escriben los digitos deiferentes de la forma 4x10^n  */
+                                if(Numero != 4){ /* Aquí se escriben los digitos diferentes de la forma 4x10^n  */
                                         while (ContadorDos < Numero){
                                                 Msg[Indice2] = Romanos[fix]; ++Indice2;
                                             ++ContadorDos;
