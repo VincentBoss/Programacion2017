@@ -90,7 +90,7 @@ int Romanos(char * Entrada){
         Msg[Indice2] = '\0';
         printf("\n\tEn Romano es: %s\n", Msg);
     }else{ 
-        printf("El numero debe ser mayor que uno y menos que tres mill\n"); 
+        printf("El numero debe ser mayor que uno y menos que tres mil\n"); 
     }/* Fin IF */
 return 0;
 }//Fin Romanos
