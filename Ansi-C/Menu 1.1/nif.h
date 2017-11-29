@@ -5,7 +5,7 @@
 int NIF(char*); //Prototipo
 
 int NIF(char* texto){
- int  DNI = atoi(texto);
+ int      DNI = atoi(texto); /* Se transforma el texto de entrada a numeros, previa validacion de comprobacion.h */
 char Letras[] = {'T','R','W','A','G','M',
                  'Y','F','P','D','X','B',
                  'N','J','Z','S','Q','V',
