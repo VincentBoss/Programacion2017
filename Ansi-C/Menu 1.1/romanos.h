@@ -54,30 +54,30 @@ int Romanos(char * Entrada){
                               if( Indice > 0)prefix = Indice - 1;
                                     if(Numero != 4){ /* Aquí se escriben los digitos diferentes de la forma 4x10^n, 3 = III  */
                                             while (ContadorDos < Numero){
-                                                    Msg[Indice2] = Romanos[fix]; Indice2 +=1; /* Se repite I en el mensaje final */
+                                                    Msg[Indice2] = Romanos[fix]; ++Indice2; /* Se repite I en el mensaje final */
                                                 ++ContadorDos;                                /* solo se repite un maximo de 3 veces */
                                               }
                                     }else{/* Aquí se escriben los digitos de la forma 4x10^n, 4 = IV */
-                                        Msg[Indice2] = Romanos[fix];     Indice2 +=1; /* Se almacena I en el mensaje final */
-                                        Msg[Indice2] = Romanos[prefix];  Indice2 +=1; /* Se almacena V en el mensaje final */
+                                        Msg[Indice2] = Romanos[fix];     ++Indice2; /* Se almacena I en el mensaje final */
+                                        Msg[Indice2] = Romanos[prefix];  ++Indice2; /* Se almacena V en el mensaje final */
                                     }/* Fin IF */
                           
-                      }else{
-                        prefix = Indice;
-                           fix = Indice - 1;
-                         sufix = Indice - 2;
+                      }else{ /* para 70 = LXX */
+                        prefix = Indice;     /* Indice = 4,     Romanos[4] = X -> 10  */
+                           fix = Indice - 1; /* Indice - 1 = 3, Romanos[3] = L -> 50  */
+                         sufix = Indice - 2; /* Indice - 2 = 2, Romanos[2] = C -> 100 */
                           
                                     if(Numero == 5){ /* Aquí se escriben los digitos de la forma 5x10^n  */
-                                          Msg[Indice2] = Romanos[fix]; Indice2 +=1;
+                                          Msg[Indice2] = Romanos[fix]; ++Indice2;
 
                                     }else if(Numero == 9){ /* Aquí se escriben los digitos de la forma 9x10^n, 9 = IX */
-                                          Msg[Indice2] = Romanos[prefix]; Indice2 +=1; /* Se almacena I en el mensaje final */
-                                          Msg[Indice2] = Romanos[sufix];  Indice2 +=1; /* Se almacena X en el mensaje final */
+                                          Msg[Indice2] = Romanos[prefix]; ++Indice2; /* Se almacena I en el mensaje final */
+                                          Msg[Indice2] = Romanos[sufix];  ++Indice2; /* Se almacena X en el mensaje final */
 
                                     }else{ /*Numeros entre los tipos 5x10^n y 9x10^n, correspondientes a la iteracion, 7 = VII*/
                                           Msg[Indice2] = Romanos[fix]; Indice2 +=1; /* Se almacena V en el mensaje final */
                                               while ( ContadorDos < (Numero - 5) ){ /* Se repite I en el mensaje final */
-                                                      Msg[Indice2] = Romanos[prefix]; Indice2 += 1;
+                                                      Msg[Indice2] = Romanos[prefix]; ++Indice2;
                                                   ++ContadorDos;
                                                 }
                                     }/* Fin IF */
