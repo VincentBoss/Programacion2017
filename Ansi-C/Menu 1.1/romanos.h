@@ -56,7 +56,7 @@ int Romanos(char * Entrada){
                                             while (ContadorDos < Numero){
                                                     Msg[Indice2] = Romanos[fix]; Indice2 +=1; /* Se repite I en el mensaje final */
                                                 ++ContadorDos;                                /* solo se repite un maximo de 3 veces */
-                                              }ContadorDos = 0 ;
+                                              }
                                     }else{/* Aquí se escriben los digitos de la forma 4x10^n, 4 = IV */
                                         Msg[Indice2] = Romanos[fix];     Indice2 +=1; /* Se almacena I en el mensaje final */
                                         Msg[Indice2] = Romanos[prefix];  Indice2 +=1; /* Se almacena V en el mensaje final */
@@ -79,12 +79,12 @@ int Romanos(char * Entrada){
                                               while ( ContadorDos < (Numero - 5) ){ /* Se repite I en el mensaje final */
                                                       Msg[Indice2] = Romanos[prefix]; Indice2 += 1;
                                                   ++ContadorDos;
-                                                }ContadorDos = 0;
+                                                }
                                     }/* Fin IF */
                           
                       }/* Fin IF */
-              
-                ++Contador; /*Con Contador recorremos la cadena Romanos*/
+                  ContadorDos = 0; /* Reiniciamos ContadorDos para ser utilizado por los bucles internos*/
+                ++Contador; /* Con Contador recorremos la cadena Romanos */
           }/* Fin WHILE */
         
         Msg[Indice2] = '\0';
