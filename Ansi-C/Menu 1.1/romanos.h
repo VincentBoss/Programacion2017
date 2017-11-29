@@ -24,6 +24,7 @@ int Romanos(char * Entrada){
      * ContadorDos, que es usada solo en los bucles internos y al salir de ellos es de nuevo igualada a 0 *
      ******************************************************************************************************/
      int  Contador , ContadorDos , Numero , Indice , Indice2 , Longitud , prefix , fix , sufix;
+          Contador = ContadorDos = Numero = Indice = Indice2 = Longitud = prefix = fix = sufix = 0;
 
     Numero = atoi(Entrada);
     Longitud = strlen(Entrada); /* Longitud del numero ingresado por el usuario */
