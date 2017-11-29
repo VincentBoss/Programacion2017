@@ -28,7 +28,7 @@ int Numero = 0;
                 }
             }
     }else{ /* Error, la cadena de entrada contiene un caracter no válido */
-        printf("\n\tNo se admiten ni signos de puntuacion ni letras, intentelo nuevamente\n");
+        printf("\n\tNo se admiten signos de puntuacion, letras o el numero 0, intentelo nuevamente\n");
         return 0;
     }
 }
